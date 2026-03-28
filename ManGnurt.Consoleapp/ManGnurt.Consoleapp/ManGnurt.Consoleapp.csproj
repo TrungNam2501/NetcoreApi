@@ -49,5 +49,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ManGnurt.Common\ManGnurt.Common.csproj">
+      <Project>{e8dc39e7-ed59-4da4-8d89-23964d35a237}</Project>
+      <Name>ManGnurt.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ManGnurt.DataAccess\ManGnurt.DataAccess.csproj">
+      <Project>{ca30e2e4-beeb-4eab-9feb-88bcca6a3899}</Project>
+      <Name>ManGnurt.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
