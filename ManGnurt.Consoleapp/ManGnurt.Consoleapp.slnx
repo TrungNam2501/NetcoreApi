@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="ManGnurt.Common/ManGnurt.Common.csproj" />
+  <Project Path="ManGnurt.Consoleapp/ManGnurt.Consoleapp.csproj" />
+  <Project Path="ManGnurt.DataAccess/ManGnurt.DataAccess.csproj" />
+</Solution>
