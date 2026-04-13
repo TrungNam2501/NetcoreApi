@@ -58,6 +58,7 @@ namespace ManGnurt.Common
 
             var dangerousList = new List<string>
         {
+                "<applet",
             "<script", "<iframe", "<img", "<html", "<body",
             "<embed", "<object", "<link", "<style",
             "javascript:", "onerror", "onload",
