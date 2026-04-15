@@ -153,5 +153,52 @@ namespace ManGnurt.Common
 
         public static string ToVietnameseLongDateString(DateTime dt) =>
             dt.ToString("dddd, dd MMMM yyyy", CultureInfo.GetCultureInfo("vi-VN"));
+        // hàm so sánh 2 mốc thời gian và trả về một chuỗi mô tả sự khác biệt (ví dụ: "2 ngày trước", "3 giờ sau"). 
+        public static string GetTimeDifferenceDescription(DateTime inputTime)
+        {
+            DateTime now = DateTime.Now;
+            TimeSpan diff = inputTime - now;
+
+            bool isFuture = diff.TotalSeconds > 0;
+            double seconds = Math.Abs(diff.TotalSeconds);
+
+            if (seconds < 60)
+                return "vừa xong";
+
+            if (seconds < 3600)
+            {
+                int minutes = (int)(seconds / 60);
+                return isFuture ? $"{minutes} phút sau" : $"{minutes} phút trước";
+            }
+
+            if (seconds < 86400)
+            {
+                int hours = (int)(seconds / 3600);
+                return isFuture ? $"{hours} giờ sau" : $"{hours} giờ trước";
+            }
+
+            if (seconds < 2592000) // ~30 ngày
+            {
+                int days = (int)(seconds / 86400);
+                return isFuture ? $"{days} ngày sau" : $"{days} ngày trước";
+            }
+
+            if (seconds < 31536000) // ~1 năm
+            {
+                int months = (int)(seconds / 2592000);
+                return isFuture ? $"{months} tháng sau" : $"{months} tháng trước";
+            }
+
+            int years = (int)(seconds / 31536000);
+            return isFuture ? $"{years} năm sau" : $"{years} năm trước";
+        }
+
+
+        //hàm so sánh 2 mốc thời gian
+        public static int CompareDate(DateTime t1, DateTime t2)
+        {
+            return DateTime.Compare(t1, t2);
+        }
+
     }
 }

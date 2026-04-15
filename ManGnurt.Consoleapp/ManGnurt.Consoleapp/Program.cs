@@ -38,9 +38,11 @@ namespace ManGnurt.Consoleapp
             //var path = "C:\\Users\\tnamit\\Desktop\\Book1.xlsx";
             //var rs = employeerManager.Employeer_Insert_FromExcelFile(path);
             //Console.WriteLine(rs);
+            var bai6 = new Bai6_DateTime(); 
+            bai6.DateTimeDemo();
+            
 
 
-
-           }
+        }
     }
 }
