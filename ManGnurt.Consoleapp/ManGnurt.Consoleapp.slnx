@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="CollectionDemo/CollectionDemo.csproj" Id="b88db19f-16dd-446a-bb7d-f13dcbbca55d" />
   <Project Path="ManGnurt.Common/ManGnurt.Common.csproj" Id="e8dc39e7-ed59-4da4-8d89-23964d35a237" />
   <Project Path="ManGnurt.Consoleapp/ManGnurt.Consoleapp.csproj" Id="b3318f2b-b724-4073-8a59-b6f0575ceb75" />
   <Project Path="ManGnurt.DataAccess/ManGnurt.DataAccess.csproj" Id="ca30e2e4-beeb-4eab-9feb-88bcca6a3899" />
