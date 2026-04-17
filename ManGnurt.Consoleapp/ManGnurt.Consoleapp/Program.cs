@@ -225,39 +225,59 @@ namespace ManGnurt.Consoleapp
             //Console.WriteLine("Model: {0}", xeBus.Model);
             //Console.WriteLine("Color: {0}", xeBus.Color);
             //Console.WriteLine("Year: {0}", xeBus.Year);
-             //var distance = 100;
-             //var time = xeBus.Run(distance);
-             //Console.WriteLine("Thời gian chạy {0} km: {1} giờ", distance, time);
+            //var distance = 100;
+            //var time = xeBus.Run(distance);
+            //Console.WriteLine("Thời gian chạy {0} km: {1} giờ", distance, time);
 
 
-            var nhanVien = new Employeer_Partial();
-            nhanVien.DoWord();  
-            nhanVien.GoToLunch();
-
-            var conbo = new DataAccess.AbstractClass.Cow();
-            conbo.Name = "Bò sữa";
-            conbo.MakeSound();
-
-            var conchim = new DataAccess.AbstractClass.Bird();
-            conchim.Name = "Chim sẻ";
-            conchim.MakeSound();
 
 
-            var hinhvuong = new DataAccess.AbstractClass.HinhVuong(5);
-            Console.WriteLine("Diện tích hình vuông: {0}", hinhvuong.TinhDienTich());
-            Console.WriteLine("Chu vi hình vuông: {0}", hinhvuong.TinhChuVi());
 
-            var hinhchunhat = new DataAccess.AbstractClass.HinhChuNhat(4, 6);
-            Console.WriteLine("Diện tích hình chữ nhật: {0}", hinhchunhat.TinhDienTich());
-            Console.WriteLine("Chu vi hình chữ nhật: {0}", hinhchunhat.TinhChuVi());
+            //var nhanVien = new Employeer_Partial();
+            //nhanVien.DoWord();  
+            //nhanVien.GoToLunch();
 
-            var hinhbinhhanh = new DataAccess.AbstractClass.HinhBinhHanh(4, 6);
-            Console.WriteLine("Diện tích hình bình hành: {0}", hinhbinhhanh.TinhDienTich());
-            Console.WriteLine("Chu vi hình bình hành: {0}", hinhbinhhanh.TinhChuVi());
+            //var conbo = new DataAccess.AbstractClass.Cow();
+            //conbo.Name = "Bò sữa";
+            //conbo.MakeSound();
 
-            var hinhtron =new DataAccess.AbstractClass.HinhTron(5);
-            Console.WriteLine("Diện tích hình tròn: {0}", hinhtron.TinhDienTich());
-            Console.WriteLine("Chu vi hình tròn: {0}", hinhtron.TinhChuVi());
+            //var conchim = new DataAccess.AbstractClass.Bird();
+            //conchim.Name = "Chim sẻ";
+            //conchim.MakeSound();
+
+
+            //var hinhvuong = new DataAccess.AbstractClass.HinhVuong(5);
+            //Console.WriteLine("Diện tích hình vuông: {0}", hinhvuong.TinhDienTich());
+            //Console.WriteLine("Chu vi hình vuông: {0}", hinhvuong.TinhChuVi());
+
+            //var hinhchunhat = new DataAccess.AbstractClass.HinhChuNhat(4, 6);
+            //Console.WriteLine("Diện tích hình chữ nhật: {0}", hinhchunhat.TinhDienTich());
+            //Console.WriteLine("Chu vi hình chữ nhật: {0}", hinhchunhat.TinhChuVi());
+
+            //var hinhbinhhanh = new DataAccess.AbstractClass.HinhBinhHanh(4, 6);
+            //Console.WriteLine("Diện tích hình bình hành: {0}", hinhbinhhanh.TinhDienTich());
+            //Console.WriteLine("Chu vi hình bình hành: {0}", hinhbinhhanh.TinhChuVi());
+
+            //var hinhtron =new DataAccess.AbstractClass.HinhTron(5);
+            //Console.WriteLine("Diện tích hình tròn: {0}", hinhtron.TinhDienTich());
+            //Console.WriteLine("Chu vi hình tròn: {0}", hinhtron.TinhChuVi());
+
+
+            var person = new PersonClass();
+            Console.WriteLine("ID: {0} ", person.GetFullName());
+
+
+
+            var mayDell= new MayTinhDell();
+            mayDell.ChieuDai = 10;
+            mayDell.ChieuRong = 5;
+            mayDell.UpRam();
+
+
+            var mayLenovo = new MayTinhLenovo();
+            mayLenovo.ChieuDai = 8;
+            mayLenovo.ChieuRong = 4;
+            mayLenovo.UpRam();
 
 
         }
