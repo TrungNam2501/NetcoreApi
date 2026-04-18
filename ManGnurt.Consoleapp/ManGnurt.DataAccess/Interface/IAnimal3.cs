@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace ManGnurt.DataAccess.Interface
 {
-    public interface IAnimal: IAnimal2,IAnimal3
+    public interface IAnimal3
     {
-        void Eat();
-
-        void Eat2();
-       
-
     }
 }

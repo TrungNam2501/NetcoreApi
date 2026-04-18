@@ -5,17 +5,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ManGnurt.DataAccess.Class
+namespace ManGnurt.DataAccess.Manager
 {
-    public class MayTinhDell : MayViTinh, IAnimal
+    public class BirdManager:IAnimal
     {
         public void Eat()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Bird is pecking seeds.");
         }
+
+  
+
         public void Eat2()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("");
         }
     }
 }

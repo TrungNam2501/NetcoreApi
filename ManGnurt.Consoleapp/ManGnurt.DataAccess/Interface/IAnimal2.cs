@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace ManGnurt.DataAccess.Interface
 {
-    public class AnimalManager:IAnimal
+    public interface IAnimal2
     {
-        public void Eat()
-        {
-            Console.WriteLine("Animal is eating.");
-        }
-    }  
-    
+
+    }
 }
