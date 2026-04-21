@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using ManGnurt.DataAccess;
 using ManGnurt.DataAccess.Class;
+using ManGnurt.DataAccess.Manager;
+using ManGnurt.DataAccess.RequestData;
 using ManGnurt.DataAccess.Struct;
 
 namespace ManGnurt.Consoleapp
@@ -278,19 +280,64 @@ namespace ManGnurt.Consoleapp
             //mayLenovo.ChieuDai = 8;
             //mayLenovo.ChieuRong = 4;
             //mayLenovo.UpRam();
-            var a = 10;
+            //var a = 10;
 
-            var myKey =System.Configuration.ConfigurationManager.AppSettings["MyKey"]??"";
-               if (string.IsNullOrEmpty(myKey))
+            //var myKey =System.Configuration.ConfigurationManager.AppSettings["MyKey"]??"";
+            //   if (string.IsNullOrEmpty(myKey))
+            //{
+            //    return;
+            //}
+            //   if (a == Convert.ToInt32(myKey))
+            //{
+            //    Console.WriteLine("a bằng MyKey");
+            //}
+
+            var productManager = new ProductManagement();
+            var requestData = new Product_GetListRequestData
             {
-                return;
-            }
-               if (a == Convert.ToInt32(myKey))
+                ProductID = null
+            };
+            var list = productManager.Product_Getlist(requestData);
+            if (list == null || list.Count == 0)
             {
-                Console.WriteLine("a bằng MyKey");
+                Console.WriteLine("Không có sản phẩm nào!");
+            }
+            else
+            {
+                foreach (var item in list)
+                {
+                    Console.WriteLine("ProductID: {0}, ProductName: {1}, Category: {2}",
+                        item.ProductID, item.ProductName, item.CategoryName);
+                }
             }
 
-        }
 
+            var resultInsert = productManager.Product_Insert(new Product_InsertRequestData
+            {
+                ProductName = "Iphone 17 Pro Max",
+                ProductImage = "XXXXXX",
+                ProductPrice = 100000,
+                CategoryID = 1
+            });
+            if (resultInsert > 0)
+            {
+                Console.WriteLine("Thêm sản phẩm thành công!");
+            }
+            else
+            {
+                switch (resultInsert) {
+                    case (-1):
+                        Console.WriteLine("Thêm sản phẩm thất bại!");
+                        break;
+                    case -2:
+                        Console.WriteLine("Tên sản phẩm đã tồn tại!");
+                        break;
+                    default:
+                        Console.WriteLine("Lỗi không xác định!");
+                        break;  
+
+                }
+            }
+        } 
     }
 }
