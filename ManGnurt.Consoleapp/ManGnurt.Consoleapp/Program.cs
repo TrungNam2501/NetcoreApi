@@ -263,22 +263,32 @@ namespace ManGnurt.Consoleapp
             //Console.WriteLine("Chu vi hình tròn: {0}", hinhtron.TinhChuVi());
 
 
-            var person = new PersonClass();
-            Console.WriteLine("ID: {0} ", person.GetFullName());
+            //var person = new PersonClass();
+            //Console.WriteLine("ID: {0} ", person.GetFullName());
 
 
 
-            var mayDell= new MayTinhDell();
-            mayDell.ChieuDai = 10;
-            mayDell.ChieuRong = 5;
-            mayDell.UpRam();
+            //var mayDell= new MayTinhDell();
+            //mayDell.ChieuDai = 10;
+            //mayDell.ChieuRong = 5;
+            //mayDell.UpRam();
 
 
-            var mayLenovo = new MayTinhLenovo();
-            mayLenovo.ChieuDai = 8;
-            mayLenovo.ChieuRong = 4;
-            mayLenovo.UpRam();
+            //var mayLenovo = new MayTinhLenovo();
+            //mayLenovo.ChieuDai = 8;
+            //mayLenovo.ChieuRong = 4;
+            //mayLenovo.UpRam();
+            var a = 10;
 
+            var myKey =System.Configuration.ConfigurationManager.AppSettings["MyKey"]??"";
+               if (string.IsNullOrEmpty(myKey))
+            {
+                return;
+            }
+               if (a == Convert.ToInt32(myKey))
+            {
+                Console.WriteLine("a bằng MyKey");
+            }
 
         }
 
