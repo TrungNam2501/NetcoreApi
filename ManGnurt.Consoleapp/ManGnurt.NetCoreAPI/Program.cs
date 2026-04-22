@@ -1,28 +1,45 @@
-﻿using Scalar.AspNetCore;
+﻿using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+// --- 1. Đăng ký dịch vụ (Services) ---
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+
+// Chỉ dùng bộ Swagger này là đủ
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+
+//app.UseExceptionHandler();
+//app.UseHsts();
+//app.UseHttpsRedirection();
+//app.UseStaticFiles();
+//app.UseRouting();
+//app.UseStaticFiles();
+//app.UseCors();
+
+// --- 2. Cấu hình Pipeline (Middleware) ---
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
-   app.MapScalarApiReference(options => {
-        options.WithTitle("Kenda API System") // Bạn có thể đặt tên tùy ý
-               .WithTheme(ScalarTheme.Moon);
-    });
-   // app.MapScalarApiReference();
+    // Bật Swagger để có giao diện UI
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
+
+app.UseMiddleware<ManGnurt.NetCoreAPI.MiddleWare.MyMiddleware>();
 
 app.UseAuthorization();
 
 app.MapControllers();
+
+/// Cấu hình để phục vụ các file tĩnh từ thư mục "File" trong dự án, có thể truy cập qua đường dẫn "/File"
+//app.UseStaticFiles(new StaticFileOptions
+//{
+//    FileProvider= new PhysicalFileProvider(
+//        Path.Combine(Directory.GetCurrentDirectory(), "File")),
+//    RequestPath= "/File"
+//});
 
 app.Run();
