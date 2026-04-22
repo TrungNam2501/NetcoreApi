@@ -1,0 +1,6 @@
+@ManGnurt.NetCoreAPI_HostAddress = http://localhost:5018
+
+GET {{ManGnurt.NetCoreAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
