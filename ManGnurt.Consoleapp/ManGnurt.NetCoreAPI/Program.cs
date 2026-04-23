@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.FileProviders;
+﻿using ManGnurt.DataAccessNetcore.IServices;
+using ManGnurt.DataAccessNetcore.Services;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +10,8 @@ builder.Services.AddControllers();
 // Chỉ dùng bộ Swagger này là đủ
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<IProductServices, ProductServices>();
 
 var app = builder.Build();
 

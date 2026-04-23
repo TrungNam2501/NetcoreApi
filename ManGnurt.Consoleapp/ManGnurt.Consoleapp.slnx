@@ -4,6 +4,7 @@
   <Project Path="ManGnurt.Common/ManGnurt.Common.csproj" Id="e8dc39e7-ed59-4da4-8d89-23964d35a237" />
   <Project Path="ManGnurt.Consoleapp/ManGnurt.Consoleapp.csproj" Id="b3318f2b-b724-4073-8a59-b6f0575ceb75" />
   <Project Path="ManGnurt.DataAccess/ManGnurt.DataAccess.csproj" Id="ca30e2e4-beeb-4eab-9feb-88bcca6a3899" />
+  <Project Path="ManGnurt.DataAccessNetcore/ManGnurt.DataAccessNetcore.csproj" Id="9aa0e7b7-5366-4810-96b7-61f513ea86cf" />
   <Project Path="ManGnurt.NetCoreAPI/ManGnurt.NetCoreAPI.csproj" Id="ce3d2e7e-38b8-4602-878e-4e7d53d32bb4" />
   <Project Path="ManGnurt.NetCoreWeb/ManGnurt.NetCoreWeb.csproj" Id="fc7f4f7b-a6f6-4092-a3d0-37cef69fce89" />
 </Solution>
