@@ -15,7 +15,7 @@ namespace ManGnurt.DataAccessNetcore.RequestData
       
         public string? ProductName { get; set; }
         public string? ProductImage { get; set; }
-        public int   ProductPrice{get;set;}
+        public int?   ProductPrice{get;set;}
         public int CategoryID { get; set; }
      
 

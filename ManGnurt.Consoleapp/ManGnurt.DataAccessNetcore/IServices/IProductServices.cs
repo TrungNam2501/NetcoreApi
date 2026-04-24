@@ -10,8 +10,9 @@ namespace ManGnurt.DataAccessNetcore.IServices
     {
         
         Task<List<ProductDTO>> Product_Getlist(Product_GetListRequestData requestData);
-        Task<int> Product_Insert(Product_InsertRequestData requestData);
+        Task<ReturnData> Product_Insert(Product_InsertRequestData requestData);
+        Task<List<Product>> Product_Getlist_EfCore(Product_GetListRequestData requestData);
 
-        
+
     }
 }

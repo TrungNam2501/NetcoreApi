@@ -1,8 +1,16 @@
-﻿using ManGnurt.DataAccessNetcore.IServices;
+﻿using ManGnurt.DataAccessNetcore.Dbcontext;
+using ManGnurt.DataAccessNetcore.IServices;
 using ManGnurt.DataAccessNetcore.Services;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
+var configuration = builder.Configuration;
+builder.Services.AddDbContext<ManGnurtDbContext>(options =>
+               options.UseSqlServer(configuration.GetConnectionString("ConnStr133")));
+
+
 
 // --- 1. Đăng ký dịch vụ (Services) ---
 builder.Services.AddControllers();

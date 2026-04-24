@@ -19,7 +19,7 @@ namespace ManGnurt.NetCoreAPI.Controllers
         {
             try
             {
-                var list = await _productServices.Product_Getlist(requestData);
+                var list = await _productServices.Product_Getlist_EfCore(requestData);
                 return Ok(list);
 
             }
@@ -28,6 +28,21 @@ namespace ManGnurt.NetCoreAPI.Controllers
                 return BadRequest(ex.Message);
 
             }
-        } 
+        }
+        [HttpPost("Product_Insert")]
+        public async Task<IActionResult> Product_Insert(Product_InsertRequestData requestData)
+        {
+            try
+            {
+                var list = await _productServices.Product_Insert(requestData);
+                return Ok(list);
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+
+            }
+        }
     }
 }

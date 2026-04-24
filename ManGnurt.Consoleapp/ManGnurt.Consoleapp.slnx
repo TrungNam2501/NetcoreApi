@@ -2,6 +2,7 @@
   <Project Path="ChimAll/ChimAll.csproj" Id="3fc844f0-e028-4265-8d91-57cc830c249d" />
   <Project Path="CollectionDemo/CollectionDemo.csproj" Id="b88db19f-16dd-446a-bb7d-f13dcbbca55d" />
   <Project Path="ManGnurt.Common/ManGnurt.Common.csproj" Id="e8dc39e7-ed59-4da4-8d89-23964d35a237" />
+  <Project Path="ManGnurt.CommonNetcore/ManGnurt.CommonNetcore.csproj" Id="414ae935-ca37-4d03-9488-ec3a004042ee" />
   <Project Path="ManGnurt.Consoleapp/ManGnurt.Consoleapp.csproj" Id="b3318f2b-b724-4073-8a59-b6f0575ceb75" />
   <Project Path="ManGnurt.DataAccess/ManGnurt.DataAccess.csproj" Id="ca30e2e4-beeb-4eab-9feb-88bcca6a3899" />
   <Project Path="ManGnurt.DataAccessNetcore/ManGnurt.DataAccessNetcore.csproj" Id="9aa0e7b7-5366-4810-96b7-61f513ea86cf" />
