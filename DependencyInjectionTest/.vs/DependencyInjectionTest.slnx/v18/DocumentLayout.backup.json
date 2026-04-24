@@ -1,0 +1,113 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\C#netcore\\ProjectNetcore\\DependencyInjectionTest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AA829851-3ED5-960C-26FC-1425CDAA0188}|DependencyInjectionTest\\DependencyInjectionTest.csproj|e:\\c#netcore\\projectnetcore\\dependencyinjectiontest\\dependencyinjectiontest\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AA829851-3ED5-960C-26FC-1425CDAA0188}|DependencyInjectionTest\\DependencyInjectionTest.csproj|solutionrelative:dependencyinjectiontest\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA829851-3ED5-960C-26FC-1425CDAA0188}|DependencyInjectionTest\\DependencyInjectionTest.csproj|e:\\c#netcore\\projectnetcore\\dependencyinjectiontest\\dependencyinjectiontest\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA829851-3ED5-960C-26FC-1425CDAA0188}|DependencyInjectionTest\\DependencyInjectionTest.csproj|solutionrelative:dependencyinjectiontest\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA829851-3ED5-960C-26FC-1425CDAA0188}|DependencyInjectionTest\\DependencyInjectionTest.csproj|e:\\c#netcore\\projectnetcore\\dependencyinjectiontest\\dependencyinjectiontest\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA829851-3ED5-960C-26FC-1425CDAA0188}|DependencyInjectionTest\\DependencyInjectionTest.csproj|solutionrelative:dependencyinjectiontest\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA829851-3ED5-960C-26FC-1425CDAA0188}|DependencyInjectionTest\\DependencyInjectionTest.csproj|e:\\c#netcore\\projectnetcore\\dependencyinjectiontest\\dependencyinjectiontest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA829851-3ED5-960C-26FC-1425CDAA0188}|DependencyInjectionTest\\DependencyInjectionTest.csproj|solutionrelative:dependencyinjectiontest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA829851-3ED5-960C-26FC-1425CDAA0188}|DependencyInjectionTest\\DependencyInjectionTest.csproj|e:\\c#netcore\\projectnetcore\\dependencyinjectiontest\\dependencyinjectiontest\\services\\imyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA829851-3ED5-960C-26FC-1425CDAA0188}|DependencyInjectionTest\\DependencyInjectionTest.csproj|solutionrelative:dependencyinjectiontest\\services\\imyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "E:\\C#netcore\\ProjectNetcore\\DependencyInjectionTest\\DependencyInjectionTest\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "DependencyInjectionTest\\WeatherForecast.cs",
+              "ToolTip": "E:\\C#netcore\\ProjectNetcore\\DependencyInjectionTest\\DependencyInjectionTest\\WeatherForecast.cs",
+              "RelativeToolTip": "DependencyInjectionTest\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T07:02:32.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\C#netcore\\ProjectNetcore\\DependencyInjectionTest\\DependencyInjectionTest\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "DependencyInjectionTest\\Properties\\launchSettings.json",
+              "ToolTip": "E:\\C#netcore\\ProjectNetcore\\DependencyInjectionTest\\DependencyInjectionTest\\Properties\\launchSettings.json",
+              "RelativeToolTip": "DependencyInjectionTest\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-23T06:56:24.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TestController.cs",
+              "DocumentMoniker": "E:\\C#netcore\\ProjectNetcore\\DependencyInjectionTest\\DependencyInjectionTest\\Controllers\\TestController.cs",
+              "RelativeDocumentMoniker": "DependencyInjectionTest\\Controllers\\TestController.cs",
+              "ToolTip": "E:\\C#netcore\\ProjectNetcore\\DependencyInjectionTest\\DependencyInjectionTest\\Controllers\\TestController.cs",
+              "RelativeToolTip": "DependencyInjectionTest\\Controllers\\TestController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T06:53:42.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\C#netcore\\ProjectNetcore\\DependencyInjectionTest\\DependencyInjectionTest\\Program.cs",
+              "RelativeDocumentMoniker": "DependencyInjectionTest\\Program.cs",
+              "ToolTip": "E:\\C#netcore\\ProjectNetcore\\DependencyInjectionTest\\DependencyInjectionTest\\Program.cs",
+              "RelativeToolTip": "DependencyInjectionTest\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T06:50:56.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IMyservice.cs",
+              "DocumentMoniker": "E:\\C#netcore\\ProjectNetcore\\DependencyInjectionTest\\DependencyInjectionTest\\Services\\IMyservice.cs",
+              "RelativeDocumentMoniker": "DependencyInjectionTest\\Services\\IMyservice.cs",
+              "ToolTip": "E:\\C#netcore\\ProjectNetcore\\DependencyInjectionTest\\DependencyInjectionTest\\Services\\IMyservice.cs",
+              "RelativeToolTip": "DependencyInjectionTest\\Services\\IMyservice.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T06:50:31.691Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
