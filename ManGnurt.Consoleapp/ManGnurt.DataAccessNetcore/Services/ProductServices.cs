@@ -10,7 +10,7 @@ using System.Text;
 
 namespace ManGnurt.DataAccessNetcore.Services
 {
-    public class ProductServices : IProductServices
+    public class ProductServices : IProductServices, IProductRepository
     {
         private readonly ManGnurtDbContext _dbContext;
         public ProductServices(ManGnurtDbContext dbContext)
