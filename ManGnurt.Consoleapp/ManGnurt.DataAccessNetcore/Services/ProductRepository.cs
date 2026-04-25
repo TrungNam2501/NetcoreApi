@@ -10,10 +10,10 @@ using System.Text;
 
 namespace ManGnurt.DataAccessNetcore.Services
 {
-    public class ProductServices : IProductServices
+    public class ProductRepository : IProductRepository
     {
         private readonly ManGnurtDbContext _dbContext;
-        public ProductServices(ManGnurtDbContext dbContext)
+        public ProductRepository(ManGnurtDbContext dbContext)
         {
             _dbContext = dbContext;
         }
@@ -87,7 +87,7 @@ namespace ManGnurt.DataAccessNetcore.Services
             }
             catch (Exception ex)
             {
-                // Bạn có thể xử lý log lỗi ở đây nếu cần trước khi throw
+                
                 throw;
             }
 

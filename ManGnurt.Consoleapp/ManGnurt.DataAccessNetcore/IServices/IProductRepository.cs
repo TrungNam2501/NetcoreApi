@@ -6,7 +6,7 @@ using System.Text;
 
 namespace ManGnurt.DataAccessNetcore.IServices
 {
-    public interface IProductServices
+    public interface IProductRepository
     {
         /// <summary>
         /// lấy dữ liệu theo kiểu ADO cũ
