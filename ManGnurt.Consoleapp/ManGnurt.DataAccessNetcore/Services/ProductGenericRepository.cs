@@ -45,5 +45,46 @@ namespace ManGnurt.DataAccessNetcore.Services
 
             return await base.Insert(entity);
         }
+
+        public override async Task<Product> Update(Product entity)
+        {
+            if (entity.ProductID <= 0)
+                throw new ProductException("Product ID is not valid.");
+
+            var existing = await _dbSet.FindAsync(entity.ProductID);
+            if (existing == null)
+                throw new ProductException("Product not found.");
+
+            if (string.IsNullOrEmpty(entity.ProductName))
+                throw new ProductException("Product name is required.");
+
+            if (entity.ProductPrice == null || entity.ProductPrice <= 0)
+                throw new ProductException("Product price must be greater than 0.");
+
+            var isDuplicate = await _dbSet.AnyAsync(p => p.ProductName == entity.ProductName && p.ProductID != entity.ProductID);
+            if (isDuplicate)
+                throw new ProductException("Product name already exists.");
+
+            existing.ProductName = entity.ProductName;
+            existing.ProductImage = entity.ProductImage;
+            existing.ProductPrice = entity.ProductPrice;
+            existing.CategoryID = entity.CategoryID;
+
+            await _dbContext.SaveChangesAsync();
+            return existing;
+        }
+
+        public override async Task Delete(int id)
+        {
+            if (id <= 0)
+                throw new ProductException("Product ID is not valid.");
+
+            var entity = await _dbSet.FindAsync(id);
+            if (entity == null)
+                throw new ProductException("Product not found.");
+
+            _dbSet.Remove(entity);
+            await _dbContext.SaveChangesAsync();
+        }
     }
 }
