@@ -20,7 +20,9 @@ namespace ManGnurt.DataAccessNetcore.Dbcontext
             base.OnModelCreating(modelBuilder);
             // Configure entity relationships and constraints here if needed.
         }
-        public virtual  DbSet<Product> product { get; set; }
+        public virtual DbSet<Product> product { get; set; }
+        public virtual DbSet<Account> account { get; set; }
+        public virtual DbSet<Category> category { get; set; }
 
     }
 }
